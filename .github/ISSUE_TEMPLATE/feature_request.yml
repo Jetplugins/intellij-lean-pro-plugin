@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest an improvement to Lean Pro
+title: "[Feature]: "
+labels:
+  - enhancement
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: Search existing issues first so related ideas can be discussed together.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Workflow or problem
+      description: What are you trying to do in Lean Pro, and where do you get stuck?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed behavior
+      description: Describe how the feature would fit into your existing workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Examples or alternatives
+      description: Add a redacted Lean example, screenshots, or workarounds if they help explain the request.

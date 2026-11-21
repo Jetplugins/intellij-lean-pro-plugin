@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a reproducible problem in Lean Pro
+title: "[Bug]: "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: Search existing issues first. Redact credentials, license keys, personal information, and private source code.
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Lean Pro version
+      placeholder: "2026.0.1"
+    validations:
+      required: true
+  - type: input
+    id: ide
+    attributes:
+      label: JetBrains IDE and full build number
+      placeholder: "IntelliJ IDEA 2025.2, IC-252.23892.409"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system and version
+    validations:
+      required: true
+  - type: input
+    id: toolchain
+    attributes:
+      label: Lean toolchain
+      description: Paste the lean-toolchain pin or output of lean --version. Enter unknown if setup is the issue.
+      placeholder: "leanprover/lean4:v4.35.0"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the smallest sequence of steps that reproduces the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: Expected and actual behavior
+      description: Describe what you expected to happen and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Minimal Lean example
+      description: Provide a redacted Lean snippet or link to a small reproducing Lake project.
+      render: lean
+  - type: textarea
+    id: context
+    attributes:
+      label: Project setup and supporting details
+      description: Include the LSP4IJ version and any relevant Lake, Mathlib, lean-fmt, or lldb-dap details. Add redacted logs or screenshots if helpful.

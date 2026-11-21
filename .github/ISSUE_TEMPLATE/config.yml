@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Lean Pro reporting guide
+    url: https://github.com/Jetplugins/intellij-lean-pro-plugin#readme
+    about: Find out what to include in a bug report.
+  - name: Report a security vulnerability privately
+    url: https://github.com/Jetplugins/intellij-lean-pro-plugin/security/advisories/new
+    about: Share security vulnerabilities privately with the maintainers.
